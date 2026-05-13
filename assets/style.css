@@ -59,6 +59,8 @@ nav.scrolled{box-shadow:0 2px 30px rgba(15,61,40,.12)}
 /* ── SHARED LAYOUT ── */
 .page-wrap{padding-top:70px;min-height:100vh}
 .section{padding:90px 48px}
+/* Home page sections — tighter top padding */
+.section-home{padding-top:52px}
 .section-alt{background:var(--cream)}
 .section-dark{background:var(--navy)}
 .container{max-width:1100px;margin:0 auto}
@@ -222,7 +224,7 @@ footer ul a:hover{color:var(--accent)}
 #success-msg p{font-size:15px;color:var(--ink-mid);line-height:1.6}
 
 /* ── HOME HERO ── */
-.hero{position:relative;overflow:hidden;background:var(--forest-dark);padding:70px 48px 0}
+.hero{position:relative;overflow:hidden;background:var(--forest-dark);padding:50px 48px 0}
 .hero-mesh{position:absolute;inset:0;z-index:0;background:radial-gradient(ellipse 80% 60% at 20% 50%,rgba(38,122,82,.6) 0%,transparent 60%),radial-gradient(ellipse 50% 80% at 80% 20%,rgba(23,38,72,.8) 0%,transparent 50%),radial-gradient(ellipse 60% 50% at 60% 80%,rgba(15,61,40,.9) 0%,transparent 60%);animation:meshShift 10s ease-in-out infinite alternate}
 @keyframes meshShift{0%{filter:hue-rotate(0deg) brightness(1)}100%{filter:hue-rotate(8deg) brightness(1.08)}}
 .hero-grid{position:absolute;inset:0;z-index:1;background-image:linear-gradient(rgba(255,255,255,.03) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.03) 1px,transparent 1px);background-size:60px 60px}
@@ -242,7 +244,8 @@ footer ul a:hover{color:var(--accent)}
 .btn-hero-outline:hover{border-color:var(--white);background:rgba(255,255,255,.1)}
 /* Logo column — sits right, aligns to bottom of hero */
 .hero-logo-col{display:flex;align-items:flex-end;justify-content:center;padding-bottom:0}
-.hero-logo-col img{width:100%;max-width:360px;height:auto;filter:drop-shadow(0 12px 40px rgba(0,0,0,.55));animation:logoRise .9s var(--ease) .2s both}
+.hero-logo-col picture{display:block;line-height:0;font-size:0}
+.hero-logo-col img{display:block;width:100%;max-width:420px;height:auto;filter:drop-shadow(0 10px 36px rgba(0,0,0,.5));animation:logoRise .9s var(--ease) .2s both}
 @keyframes logoRise{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
 
 /* ── FADE IN ── */
@@ -281,6 +284,7 @@ footer ul a:hover{color:var(--accent)}
 
 /* ── COMPARISON TABLE ── */
 .compare-section{padding:80px 48px;background:var(--cream)}
+.compare-section.section-home{padding-top:52px}
 .compare-section .eyebrow{display:inline-flex}
 .compare-intro{display:grid;grid-template-columns:1fr auto;gap:32px;align-items:flex-end;margin-bottom:48px}
 .compare-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;border-radius:var(--r-xl);box-shadow:var(--sh-lg)}
