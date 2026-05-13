@@ -78,7 +78,6 @@
   <div class="hero-grid"></div>
   <svg class="hero-cross" viewBox="0 0 500 500" aria-hidden="true"><rect x="190" y="0" width="120" height="500" fill="white"/><rect x="0" y="190" width="500" height="120" fill="white"/></svg>
   <div class="hero-inner">
-    <div class="hero-mobile-logo"><picture><source srcset="assets/logo.webp" type="image/webp"><img src="assets/logo.png" alt="Bristol First Aid Services" width="280" height="222"></picture></div>
     <div class="hero-content">
       <div class="hero-pill">
         <span class="hero-pill-dot"></span>
@@ -94,11 +93,11 @@
         <a href="about.html" class="btn-hero-outline">Meet Phil</a>
       </div>
     </div>
-    <div class="hero-panel">
-      <div class="hero-logo-wrap">
-        <picture><source srcset="assets/logo.webp" type="image/webp"><img src="assets/logo.png" alt="Bristol First Aid Services logo" width="200" height="164"></picture>
-      </div>
-      </div>
+    <div class="hero-logo-col">
+      <picture>
+        <source srcset="assets/logo.webp" type="image/webp">
+        <img src="assets/logo.png" alt="Bristol First Aid Services" width="340" height="270">
+      </picture>
     </div>
   </div>
 </div>
@@ -275,133 +274,137 @@
 
 <div class="compare-section">
   <div class="container">
-    <div class="eyebrow">Course Comparison</div>
-    <h2 class="section-heading">Not Sure Which Course is Right for You?</h2>
-    <p class="section-lead">Compare all five courses side by side to find the right fit for your organisation or individual needs.</p>
-    <div class="compare-wrap">
-      <table class="compare-table" role="table">
+    <div class="compare-intro">
+      <div>
+        <div class="eyebrow">Course Comparison</div>
+        <h2 class="section-heading">Not Sure Which Course is Right for You?</h2>
+        <p class="section-lead">Compare all five courses side by side to find the perfect fit.</p>
+      </div>
+    </div>
+    <div class="compare-scroll">
+      <table class="ctable">
         <thead>
           <tr>
-            <th scope="col"></th>
-            <th scope="col" class="col-green">FAW Level 1<br><span style="font-weight:400;opacity:.75;font-size:10px;letter-spacing:0;text-transform:none">Emergency FAW</span></th>
-            <th scope="col" class="col-green">FAW Level 2</th>
-            <th scope="col" class="col-green">FAW Level 3<br><span style="font-weight:400;opacity:.75;font-size:10px;letter-spacing:0;text-transform:none">Full FAW</span></th>
-            <th scope="col" class="col-navy">Paediatric<br><span style="font-weight:400;opacity:.75;font-size:10px;letter-spacing:0;text-transform:none">First Aid</span></th>
-            <th scope="col" class="col-navy">Mental Health<br><span style="font-weight:400;opacity:.75;font-size:10px;letter-spacing:0;text-transform:none">First Aid</span></th>
+            <th class="rlabel"></th>
+            <th class="dc dc-green">FAW Level 1<span class="col-sub">Emergency FAW</span></th>
+            <th class="dc dc-green">FAW Level 2<span class="col-sub">Intermediate</span></th>
+            <th class="dc dc-green">FAW Level 3<span class="col-sub">Full Qualification</span></th>
+            <th class="dc dc-navy">Paediatric<span class="col-sub">First Aid</span></th>
+            <th class="dc dc-navy">Mental Health<span class="col-sub">First Aid</span></th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td>Duration</td>
-            <td><span class="compare-badge badge-green">Half Day</span></td>
-            <td><span class="compare-badge badge-green">1 Day</span></td>
-            <td><span class="compare-badge badge-green">3 Days</span></td>
-            <td><span class="compare-badge badge-navy">2 Days</span></td>
-            <td><span class="compare-badge badge-navy">2 Days</span></td>
+            <td class="rlabel">Duration</td>
+            <td class="dc dc-green"><span class="cpill cpill-green">Half Day</span></td>
+            <td class="dc dc-green"><span class="cpill cpill-green">1 Day</span></td>
+            <td class="dc dc-green"><span class="cpill cpill-green">3 Days</span></td>
+            <td class="dc dc-navy"><span class="cpill cpill-navy">2 Days</span></td>
+            <td class="dc dc-navy"><span class="cpill cpill-navy">2 Days</span></td>
           </tr>
           <tr>
-            <td>Accreditation</td>
-            <td>Ofqual Level 1</td>
-            <td>Ofqual Level 2</td>
-            <td>Ofqual Level 3</td>
-            <td>Ofqual Level 3</td>
-            <td>MHFA England</td>
+            <td class="rlabel">Accreditation</td>
+            <td class="dc dc-green"><span class="cpill cpill-green">Ofqual L1</span></td>
+            <td class="dc dc-green"><span class="cpill cpill-green">Ofqual L2</span></td>
+            <td class="dc dc-green"><span class="cpill cpill-green">Ofqual L3</span></td>
+            <td class="dc dc-navy"><span class="cpill cpill-navy">Ofqual L3</span></td>
+            <td class="dc dc-navy"><span class="cpill cpill-navy">MHFA England</span></td>
           </tr>
           <tr>
-            <td>Certificate Valid</td>
-            <td>3 Years</td>
-            <td>3 Years</td>
-            <td>3 Years</td>
-            <td>3 Years</td>
-            <td>3 Years</td>
+            <td class="rlabel">Certificate Valid</td>
+            <td class="dc dc-green"><span class="cpill cpill-cream">3 Years</span></td>
+            <td class="dc dc-green"><span class="cpill cpill-cream">3 Years</span></td>
+            <td class="dc dc-green"><span class="cpill cpill-cream">3 Years</span></td>
+            <td class="dc dc-navy"><span class="cpill cpill-cream">3 Years</span></td>
+            <td class="dc dc-navy"><span class="cpill cpill-cream">3 Years</span></td>
           </tr>
           <tr>
-            <td>HSE Compliant</td>
-            <td><span class="compare-yes"><svg width="14" height="14"><use href="#ico-check"/></svg> Yes</span></td>
-            <td><span class="compare-yes"><svg width="14" height="14"><use href="#ico-check"/></svg> Yes</span></td>
-            <td><span class="compare-yes"><svg width="14" height="14"><use href="#ico-check"/></svg> Yes</span></td>
-            <td><span class="compare-yes"><svg width="14" height="14"><use href="#ico-check"/></svg> Yes</span></td>
-            <td><span class="compare-yes"><svg width="14" height="14"><use href="#ico-check"/></svg> Yes</span></td>
+            <td class="rlabel">HSE Compliant</td>
+            <td class="dc dc-green"><span class="cyes"><svg width="13" height="13" style="color:white"><use href="#ico-check"/></svg></span></td>
+            <td class="dc dc-green"><span class="cyes"><svg width="13" height="13" style="color:white"><use href="#ico-check"/></svg></span></td>
+            <td class="dc dc-green"><span class="cyes"><svg width="13" height="13" style="color:white"><use href="#ico-check"/></svg></span></td>
+            <td class="dc dc-navy"><span class="cyes"><svg width="13" height="13" style="color:white"><use href="#ico-check"/></svg></span></td>
+            <td class="dc dc-navy"><span class="cyes"><svg width="13" height="13" style="color:white"><use href="#ico-check"/></svg></span></td>
           </tr>
           <tr>
-            <td>Ideal For</td>
-            <td>Low risk workplaces</td>
-            <td>Medium risk workplaces</td>
-            <td>High risk workplaces</td>
-            <td>Childcare settings</td>
-            <td>Any workplace</td>
+            <td class="rlabel">Best For</td>
+            <td class="dc dc-green" style="font-size:13px;color:var(--ink-mid)">Low&nbsp;risk workplaces</td>
+            <td class="dc dc-green" style="font-size:13px;color:var(--ink-mid)">Medium&nbsp;risk workplaces</td>
+            <td class="dc dc-green" style="font-size:13px;color:var(--ink-mid)">High&nbsp;risk workplaces</td>
+            <td class="dc dc-navy" style="font-size:13px;color:var(--ink-mid)">Childcare settings</td>
+            <td class="dc dc-navy" style="font-size:13px;color:var(--ink-mid)">Any workplace</td>
           </tr>
           <tr>
-            <td>Adult CPR &amp; AED</td>
-            <td><span class="compare-yes"><svg width="14" height="14"><use href="#ico-check"/></svg> Yes</span></td>
-            <td><span class="compare-yes"><svg width="14" height="14"><use href="#ico-check"/></svg> Yes</span></td>
-            <td><span class="compare-yes"><svg width="14" height="14"><use href="#ico-check"/></svg> Yes</span></td>
-            <td><span class="compare-yes"><svg width="14" height="14"><use href="#ico-check"/></svg> Yes</span></td>
-            <td><span class="compare-no">—</span></td>
+            <td class="rlabel">Adult CPR &amp; AED</td>
+            <td class="dc dc-green"><span class="cyes"><svg width="13" height="13" style="color:white"><use href="#ico-check"/></svg></span></td>
+            <td class="dc dc-green"><span class="cyes"><svg width="13" height="13" style="color:white"><use href="#ico-check"/></svg></span></td>
+            <td class="dc dc-green"><span class="cyes"><svg width="13" height="13" style="color:white"><use href="#ico-check"/></svg></span></td>
+            <td class="dc dc-navy"><span class="cyes"><svg width="13" height="13" style="color:white"><use href="#ico-check"/></svg></span></td>
+            <td class="dc dc-navy"><span class="cno">&#x2013;</span></td>
           </tr>
           <tr>
-            <td>Child &amp; Infant CPR</td>
-            <td><span class="compare-no">—</span></td>
-            <td><span class="compare-yes"><svg width="14" height="14"><use href="#ico-check"/></svg> Yes</span></td>
-            <td><span class="compare-yes"><svg width="14" height="14"><use href="#ico-check"/></svg> Yes</span></td>
-            <td><span class="compare-yes"><svg width="14" height="14"><use href="#ico-check"/></svg> Yes</span></td>
-            <td><span class="compare-no">—</span></td>
+            <td class="rlabel">Child &amp; Infant CPR</td>
+            <td class="dc dc-green"><span class="cno">&#x2013;</span></td>
+            <td class="dc dc-green"><span class="cyes"><svg width="13" height="13" style="color:white"><use href="#ico-check"/></svg></span></td>
+            <td class="dc dc-green"><span class="cyes"><svg width="13" height="13" style="color:white"><use href="#ico-check"/></svg></span></td>
+            <td class="dc dc-navy"><span class="cyes"><svg width="13" height="13" style="color:white"><use href="#ico-check"/></svg></span></td>
+            <td class="dc dc-navy"><span class="cno">&#x2013;</span></td>
           </tr>
           <tr>
-            <td>Choking Treatment</td>
-            <td>Adults only</td>
-            <td>Adults &amp; children</td>
-            <td>Adults &amp; children</td>
-            <td>Infants &amp; children</td>
-            <td><span class="compare-no">—</span></td>
+            <td class="rlabel">Choking Treatment</td>
+            <td class="dc dc-green" style="font-size:12px;color:var(--ink-mid)">Adults only</td>
+            <td class="dc dc-green" style="font-size:12px;color:var(--ink-mid)">Adults &amp; children</td>
+            <td class="dc dc-green" style="font-size:12px;color:var(--ink-mid)">Adults &amp; children</td>
+            <td class="dc dc-navy" style="font-size:12px;color:var(--ink-mid)">Infants &amp; children</td>
+            <td class="dc dc-navy"><span class="cno">&#x2013;</span></td>
           </tr>
           <tr>
-            <td>Fractures &amp; Spinal</td>
-            <td><span class="compare-no">—</span></td>
-            <td><span class="compare-yes"><svg width="14" height="14"><use href="#ico-check"/></svg> Yes</span></td>
-            <td><span class="compare-yes"><svg width="14" height="14"><use href="#ico-check"/></svg> Yes</span></td>
-            <td><span class="compare-yes"><svg width="14" height="14"><use href="#ico-check"/></svg> Yes</span></td>
-            <td><span class="compare-no">—</span></td>
+            <td class="rlabel">Fractures &amp; Spinal</td>
+            <td class="dc dc-green"><span class="cno">&#x2013;</span></td>
+            <td class="dc dc-green"><span class="cyes"><svg width="13" height="13" style="color:white"><use href="#ico-check"/></svg></span></td>
+            <td class="dc dc-green"><span class="cyes"><svg width="13" height="13" style="color:white"><use href="#ico-check"/></svg></span></td>
+            <td class="dc dc-navy"><span class="cyes"><svg width="13" height="13" style="color:white"><use href="#ico-check"/></svg></span></td>
+            <td class="dc dc-navy"><span class="cno">&#x2013;</span></td>
           </tr>
           <tr>
-            <td>Anaphylaxis</td>
-            <td><span class="compare-no">—</span></td>
-            <td><span class="compare-yes"><svg width="14" height="14"><use href="#ico-check"/></svg> Yes</span></td>
-            <td><span class="compare-yes"><svg width="14" height="14"><use href="#ico-check"/></svg> Yes</span></td>
-            <td><span class="compare-yes"><svg width="14" height="14"><use href="#ico-check"/></svg> Yes</span></td>
-            <td><span class="compare-no">—</span></td>
+            <td class="rlabel">Anaphylaxis</td>
+            <td class="dc dc-green"><span class="cno">&#x2013;</span></td>
+            <td class="dc dc-green"><span class="cyes"><svg width="13" height="13" style="color:white"><use href="#ico-check"/></svg></span></td>
+            <td class="dc dc-green"><span class="cyes"><svg width="13" height="13" style="color:white"><use href="#ico-check"/></svg></span></td>
+            <td class="dc dc-navy"><span class="cyes"><svg width="13" height="13" style="color:white"><use href="#ico-check"/></svg></span></td>
+            <td class="dc dc-navy"><span class="cno">&#x2013;</span></td>
           </tr>
           <tr>
-            <td>Mental Health Skills</td>
-            <td><span class="compare-no">—</span></td>
-            <td><span class="compare-no">—</span></td>
-            <td><span class="compare-no">—</span></td>
-            <td><span class="compare-no">—</span></td>
-            <td><span class="compare-yes"><svg width="14" height="14"><use href="#ico-check"/></svg> Yes</span></td>
+            <td class="rlabel">Mental Health Skills</td>
+            <td class="dc dc-green"><span class="cno">&#x2013;</span></td>
+            <td class="dc dc-green"><span class="cno">&#x2013;</span></td>
+            <td class="dc dc-green"><span class="cno">&#x2013;</span></td>
+            <td class="dc dc-navy"><span class="cno">&#x2013;</span></td>
+            <td class="dc dc-navy"><span class="cyes"><svg width="13" height="13" style="color:white"><use href="#ico-check"/></svg></span></td>
           </tr>
           <tr>
-            <td>Ofsted Recognised</td>
-            <td><span class="compare-no">—</span></td>
-            <td><span class="compare-no">—</span></td>
-            <td><span class="compare-no">—</span></td>
-            <td><span class="compare-yes"><svg width="14" height="14"><use href="#ico-check"/></svg> Yes</span></td>
-            <td><span class="compare-no">—</span></td>
+            <td class="rlabel">Ofsted Recognised</td>
+            <td class="dc dc-green"><span class="cno">&#x2013;</span></td>
+            <td class="dc dc-green"><span class="cno">&#x2013;</span></td>
+            <td class="dc dc-green"><span class="cno">&#x2013;</span></td>
+            <td class="dc dc-navy"><span class="cyes"><svg width="13" height="13" style="color:white"><use href="#ico-check"/></svg></span></td>
+            <td class="dc dc-navy"><span class="cno">&#x2013;</span></td>
           </tr>
           <tr>
-            <td>Max Group Size</td>
-            <td>12 delegates</td>
-            <td>12 delegates</td>
-            <td>12 delegates</td>
-            <td>12 delegates</td>
-            <td>16 delegates</td>
+            <td class="rlabel">Max Group Size</td>
+            <td class="dc dc-green"><span class="cpill cpill-cream">12</span></td>
+            <td class="dc dc-green"><span class="cpill cpill-cream">12</span></td>
+            <td class="dc dc-green"><span class="cpill cpill-cream">12</span></td>
+            <td class="dc dc-navy"><span class="cpill cpill-cream">12</span></td>
+            <td class="dc dc-navy"><span class="cpill cpill-cream">16</span></td>
           </tr>
-          <tr class="compare-cta-row">
-            <td>Find Out More</td>
-            <td><a href="fa-level1.html" class="compare-link green">View Course</a></td>
-            <td><a href="fa-level2.html" class="compare-link green">View Course</a></td>
-            <td><a href="fa-level3.html" class="compare-link green">View Course</a></td>
-            <td><a href="paediatric.html" class="compare-link navy">View Course</a></td>
-            <td><a href="mental-health.html" class="compare-link navy">View Course</a></td>
+          <tr class="cta-row">
+            <td class="rlabel">Book</td>
+            <td class="dc dc-green"><a href="fa-level1.html" class="ctable-btn ctable-btn-green">View Course</a></td>
+            <td class="dc dc-green"><a href="fa-level2.html" class="ctable-btn ctable-btn-green">View Course</a></td>
+            <td class="dc dc-green"><a href="fa-level3.html" class="ctable-btn ctable-btn-green">View Course</a></td>
+            <td class="dc dc-navy"><a href="paediatric.html" class="ctable-btn ctable-btn-navy">View Course</a></td>
+            <td class="dc dc-navy"><a href="mental-health.html" class="ctable-btn ctable-btn-navy">View Course</a></td>
           </tr>
         </tbody>
       </table>
