@@ -118,17 +118,19 @@
       <div>
         <div class="eyebrow">Send an Enquiry</div>
         <h2 class="section-heading" style="margin-bottom:36px">Let&rsquo;s Get You Booked In</h2>
-        <form class="contact-form" id="contact-form">
+        <form class="contact-form" id="contact-form" action="https://formspree.io/f/xbgraobo" method="POST">
+          <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+          <input type="hidden" name="_subject" value="New Enquiry — Bristol First Aid Services">
           <div class="form-row">
-            <div class="form-group"><label>First Name</label><input type="text" placeholder="Your first name" required></div>
-            <div class="form-group"><label>Last Name</label><input type="text" placeholder="Your last name" required></div>
+            <div class="form-group"><label>First Name</label><input type="text" name="firstName" placeholder="Your first name" required></div>
+            <div class="form-group"><label>Last Name</label><input type="text" name="lastName" placeholder="Your last name" required></div>
           </div>
-          <div class="form-group"><label>Email Address</label><input type="email" placeholder="your@email.com" required></div>
-          <div class="form-group"><label>Phone Number</label><input type="tel" placeholder="07xxx xxxxxx"></div>
-          <div class="form-group"><label>Organisation / Company</label><input type="text" placeholder="Your company or organisation name"></div>
+          <div class="form-group"><label>Email Address</label><input type="email" name="email" placeholder="your@email.com" required></div>
+          <div class="form-group"><label>Phone Number</label><input type="tel" name="phone" placeholder="07xxx xxxxxx"></div>
+          <div class="form-group"><label>Organisation / Company</label><input type="text" name="organisation" placeholder="Your company or organisation name"></div>
           <div class="form-group">
             <label>Course of Interest</label>
-            <select required>
+            <select name="course" required>
               <option value="">Please select a course&hellip;</option>
               <option>First Aid at Work &mdash; Level 1 (Emergency FAW)</option>
               <option>First Aid at Work &mdash; Level 2</option>
@@ -142,7 +144,7 @@
           <div class="form-row">
             <div class="form-group">
               <label>Number of Delegates</label>
-              <select>
+              <select name="delegates">
                 <option value="">Please select&hellip;</option>
                 <option>1&ndash;4 people</option>
                 <option>5&ndash;8 people</option>
@@ -152,7 +154,7 @@
             </div>
             <div class="form-group">
               <label>Your Area</label>
-              <select>
+              <select name="area">
                 <option value="">Please select&hellip;</option>
                 <option>Bristol</option>
                 <option>Bath</option>
@@ -163,7 +165,7 @@
               </select>
             </div>
           </div>
-          <div class="form-group"><label>Your Message</label><textarea placeholder="Tell us about your training needs, preferred dates, or any questions you have&hellip;"></textarea></div>
+          <div class="form-group"><label>Your Message</label><textarea name="message" placeholder="Tell us about your training needs, preferred dates, or any questions you have&hellip;"></textarea></div>
           <button type="submit" class="submit-btn">
             Send Enquiry
             <svg width="16" height="16" style="color:white"><use href="#ico-arrow-right"/></svg>
@@ -172,6 +174,10 @@
         <div id="success-msg">
           <h3>Enquiry Received</h3>
           <p>Thank you for getting in touch. We will respond within one working day to discuss your training requirements.</p>
+        </div>
+        <div id="form-error-msg">
+          <h3>Something Went Wrong</h3>
+          <p>Sorry, we could not send your enquiry. Please try again, or call us directly on <a href="tel:07733402124">07733 402124</a>.</p>
         </div>
       </div>
       <div class="contact-info-stack">

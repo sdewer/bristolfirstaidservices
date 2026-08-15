@@ -222,6 +222,10 @@ footer ul a:hover{color:var(--accent)}
 #success-msg{display:none;background:var(--cream);border:2px solid var(--forest);border-radius:var(--r-md);padding:28px}
 #success-msg h3{font-family:'DM Serif Display',serif;font-size:22px;color:var(--forest);margin-bottom:8px}
 #success-msg p{font-size:15px;color:var(--ink-mid);line-height:1.6}
+#form-error-msg{display:none;background:#FBEAE9;border:2px solid #B3261E;border-radius:var(--r-md);padding:28px;margin-top:18px}
+#form-error-msg h3{font-family:'DM Serif Display',serif;font-size:22px;color:#B3261E;margin-bottom:8px}
+#form-error-msg p{font-size:15px;color:var(--ink-mid);line-height:1.6}
+#form-error-msg a{color:#B3261E;font-weight:700}
 
 /* ── HOME HERO ── */
 .hero{position:relative;overflow:hidden;background:var(--forest-dark);padding:0 48px;min-height:480px;display:flex;align-items:stretch}

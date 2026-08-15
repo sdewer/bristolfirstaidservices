@@ -17,7 +17,28 @@ var cf=document.getElementById('contact-form');
 if(cf){
   cf.addEventListener('submit',function(e){
     e.preventDefault();
-    cf.style.display='none';
-    document.getElementById('success-msg').style.display='block';
+    var btn=cf.querySelector('.submit-btn');
+    var btnHTML=btn.innerHTML;
+    var errEl=document.getElementById('form-error-msg');
+    if(errEl)errEl.style.display='none';
+    btn.disabled=true;
+    btn.textContent='Sending…';
+    fetch(cf.action,{
+      method:'POST',
+      body:new FormData(cf),
+      headers:{ 'Accept':'application/json' }
+    }).then(function(res){
+      if(res.ok){
+        cf.style.display='none';
+        document.getElementById('success-msg').style.display='block';
+      }else{
+        throw new Error('Form submission failed');
+      }
+    }).catch(function(){
+      if(errEl)errEl.style.display='block';
+    }).finally(function(){
+      btn.disabled=false;
+      btn.innerHTML=btnHTML;
+    });
   });
 }
