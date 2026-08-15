@@ -336,3 +336,8 @@ footer ul a:hover{color:var(--accent)}
   .compare-section.section-home{padding-top:40px}
   .compare-intro{grid-template-columns:1fr}
 }
+/* FAQ section (course pages) */
+.faq-list{display:flex;flex-direction:column;gap:14px;margin-top:24px;max-width:760px}
+.faq-item{background:var(--cream);border:1px solid var(--cream-dark);border-radius:var(--r-md);padding:22px 24px}
+.faq-item h3{font-family:'DM Serif Display',serif;font-size:17px;color:var(--ink);margin-bottom:8px}
+.faq-item p{font-size:14.5px;color:var(--ink-mid);line-height:1.65;font-weight:300;margin:0}
