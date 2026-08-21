@@ -341,3 +341,9 @@ footer ul a:hover{color:var(--accent)}
 .faq-item{background:var(--cream);border:1px solid var(--cream-dark);border-radius:var(--r-md);padding:22px 24px}
 .faq-item h3{font-family:'DM Serif Display',serif;font-size:17px;color:var(--ink);margin-bottom:8px}
 .faq-item p{font-size:14.5px;color:var(--ink-mid);line-height:1.65;font-weight:300;margin:0}
+/* Course cross-sell callout (e.g. Paediatric <-> Paediatric Blended) */
+.course-callout{display:flex;align-items:flex-start;gap:14px;background:var(--forest-pale);border:1px solid var(--cream-dark);border-radius:var(--r-md);padding:20px 22px;margin:28px 0}
+.course-callout .callout-icon-wrap{flex-shrink:0;width:36px;height:36px;border-radius:50%;background:var(--forest);display:flex;align-items:center;justify-content:center}
+.course-callout strong{display:block;color:var(--ink);margin-bottom:4px}
+.course-callout p{margin:0;font-size:14.5px;color:var(--ink-mid);line-height:1.6;font-weight:300}
+.course-callout a{color:var(--forest);font-weight:700;text-decoration:underline}
